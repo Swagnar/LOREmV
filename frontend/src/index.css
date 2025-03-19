@@ -1,0 +1,9 @@
+.markdown > * {
+  all: revert;
+}
+.markdown img:first-of-type {
+  margin: 0 auto;
+}
+.markdown > h1 {
+  text-align: center;
+}
