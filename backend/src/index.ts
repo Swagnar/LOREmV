@@ -6,10 +6,11 @@ import * as marked from 'marked';
 
 const PORT = 3001
 const API_URL = "http://localhost:3001";
+const ORIGIN_URL = "http://localhost:3000";
 
 const app = express();
 app.use(cors({
-  origin: "http://localhost:3000"
+  origin: ORIGIN_URL
 }))
 
 app.use('/public', express.static(path.join(__dirname, '../public')))
